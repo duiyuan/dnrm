@@ -15,7 +15,7 @@ export default {
     {
       file: pkg.main,
       name: camelCase(libraryName),
-      format: 'umd',
+      format: 'cjs',
       sourcemap: true,
       banner: '#!/usr/bin/env node',
     },

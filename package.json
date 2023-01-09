@@ -2,8 +2,8 @@
   "name": "nrm2",
   "version": "0.1.0",
   "description": "",
-  "main": "dist/nrm2.umd.js",
-  "module": "dist/nrm2.es5.js",
+  "main": "dist/nrm2.js",
+  "module": "dist/nrm2.es.js",
   "typings": "dist/types/nrm2.d.ts",
   "bin": "dist/nrm2.js",
   "files": [
@@ -101,6 +101,7 @@
     "shelljs": "^0.8.3",
     "ts-jest": "^28.0.3",
     "ts-node": "^7.0.1",
+    "tslib": "^2.4.1",
     "typedoc": "^0.22.15",
     "typescript": "^4.3.2"
   },

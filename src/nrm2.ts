@@ -1,7 +1,7 @@
 import * as commander from 'commander'
 import * as actions from './actions'
 
-const PKG = require('./package.json')
+import PKG from '../package.json'
 
 const { program } = commander
 program.version(PKG.version)
