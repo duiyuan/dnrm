@@ -1,0 +1,108 @@
+{
+  "name": "nrm2",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/nrm2.umd.js",
+  "module": "dist/nrm2.es5.js",
+  "typings": "dist/types/nrm2.d.ts",
+  "bin": "dist/nrm2.js",
+  "files": [
+    "dist"
+  ],
+  "author": "wangshangwen <shangwenwang20@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:duiyuan/nrm2.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "NPM",
+    "registry"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts",
+    "start": "rollup -c rollup.config.ts -w",
+    "test:watch": "jest --coverage --watch",
+    "lint-eslint": "eslint -c .eslintrc.js --ext .ts,.tsx,.js src --fix",
+    "prepare": "husky install",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "{src,test}/**/*.ts": [
+      "npm run lint-eslint",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@duiyuan/commitlint-config": "^0.1.0",
+    "@duiyuan/eslint-config": "^0.1.3",
+    "@types/ini": "^1.3.31",
+    "@types/jest": "^28.1.0",
+    "@types/node": "^14",
+    "@types/node-fetch": "^2.6.2",
+    "@types/open": "^6.2.1",
+    "@types/prompt": "^1.1.0",
+    "@types/shelljs": "^0.8.11",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "babel-jest": "^28.1.0",
+    "chalk": "^4.1.2",
+    "colors": "^1.3.2",
+    "commander": "^8.3.0",
+    "commitizen": "^3.0.0",
+    "coveralls": "^3.0.2",
+    "cross-env": "^5.2.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.0",
+    "ini": "^2.0.0",
+    "jest": "^28.1.0",
+    "jest-config": "^23.6.0",
+    "lint-staged": "^8.0.0",
+    "lodash.camelcase": "^4.3.0",
+    "node-fetch": "2.6.6",
+    "open": "^8.4.0",
+    "prettier": "^2.6.2",
+    "prompt": "^1.0.0",
+    "replace-in-file": "^3.4.2",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.67.0",
+    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-typescript2": "^0.18.0",
+    "shelljs": "^0.8.3",
+    "ts-jest": "^28.0.3",
+    "ts-node": "^7.0.1",
+    "typedoc": "^0.22.15",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {}
+}
