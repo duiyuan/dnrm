@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    // 指定编译出来的代码语法，遵循哪个javascript的标准
+    "target": "es5",
+    // 指定编译出来的 module，采用何种方式实现，可选项为："None"， "CommonJS"， "AMD"， "System"， "UMD"， "ES6"或 "ES2015"
+    "module": "commonjs",
+    "lib": ["es2015", "es2016", "es2017", "dom"],
+    "strict": true,
+    "sourceMap": true,
+    "declaration": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "declarationDir": "dist/types",
+    "outDir": "dist/lib"
+  },
+  "include": ["tools"],
+  "exclude": ["node_modules", "./dist"]
+}
