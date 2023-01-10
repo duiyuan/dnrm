@@ -34,7 +34,7 @@ async function onList() {
   const keys = Object.keys(registries)
   const length = Math.max(...keys.map((key) => key.length)) + 3
 
-  const messages = keys.map((key) => {
+  const messages: string[] = keys.map((key) => {
     const registry = registries[key] as RegistryItem
     const prefix = isLowerCaseEqual(registry[REGISTRY], currentRegistry)
       ? chalk.green.bold('* ')
