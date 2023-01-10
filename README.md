@@ -1,8 +1,8 @@
-> The repo fork from [nrm](https://github.com/Pana/nrm) so that we can do:
+> Fork from [nrm](https://github.com/Pana/nrm) for some reasons:
 >
-> 1. Fix some issues at first time
+> 1. Fix some issues at first time(eg. [issue-130](https://github.com/Pana/nrm/issues/130))
 > 2. Rewrite all code with typescript
-> 3. More registry supported
+> 3. More registries supported
 
 # dxnrm -- NPM registry manager
 
