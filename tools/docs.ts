@@ -11,7 +11,7 @@ async function main() {
 
   app.bootstrap({
     // typedoc options here
-    entryPoints: ['src/nrm2.ts'],
+    entryPoints: ['src/dnrm.ts'],
   })
 
   const project = app.convert()

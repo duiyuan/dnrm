@@ -2,10 +2,11 @@
 >
 > 1. Fix some issues at first time
 > 2. Rewrite all code with typescript
+> 3. More registry supported
 
-# nrm2 -- NPM registry manager
+# dnrm -- NPM registry manager
 
-`nrm2` can help you easy and fast switch between different npm registries,
+`dnrm` can help you easy and fast switch between different npm registries,
 now include: `npm`, `cnpm`, `taobao`, `tencent`.
 
 ## How to configure yarn to use private registry ?
@@ -18,13 +19,13 @@ Or you can configure it in your HOME directory's .yarnrc
 ## Install
 
 ```
-$ npm install -g nrm2
+$ npm install -g dnrm
 ```
 
 ## Example
 
 ```
-$ nrm2 ls  // or nrm2 list
+$ dnrm ls  // or dnrm list
 
 * npm ---------- https://registry.npmjs.org/
   yarn --------- https://registry.yarnpkg.com/
@@ -36,14 +37,14 @@ $ nrm2 ls  // or nrm2 list
 ```
 
 ```
-$ nrm2 use cnpm  //switch registry to cnpm
+$ dnrm use cnpm  //switch registry to cnpm
 
     Registry has been set to: http://r.cnpmjs.org/
 
 ```
 
 ```
-$ nrm2 test // ping all registries
+$ dnrm test // ping all registries
 
     npm ---------- 664 ms
     yarn --------- 755 ms
@@ -57,7 +58,7 @@ $ nrm2 test // ping all registries
 ## Usage
 
 ```
-Usage: nrm2 [options] [command]
+Usage: dnrm [options] [command]
 
   Commands:
 
