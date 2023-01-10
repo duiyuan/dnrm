@@ -99,5 +99,5 @@ Usage: dxnrm [options] [command]
 - [npm](https://www.npmjs.org)
 - [yarn](https://yarnpkg.com)
 - [cnpm](http://cnpmjs.org)
-- [nodejitsu](https://www.nodejitsu.com)
+- [tencent](https://mirrors.cloud.tencent.com/npm/)
 - [taobao](http://npm.taobao.org/)
