@@ -46,7 +46,7 @@ async function onList() {
 }
 
 async function onCurrent(params?: { showUrl?: boolean }) {
-  const { showUrl } = params || {}
+  const { showUrl = true } = params || {}
   const currentRegistry = await getCurrentRegistry()
   let usingUnknownRegistry = true
   const registries = await getRegistries()
