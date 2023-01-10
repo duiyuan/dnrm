@@ -11,7 +11,7 @@ const ALWAYS_AUTH = 'always-auth'
 const REGISTRY_ATTRS = [REGISTRY, HOME, AUTH, ALWAYS_AUTH]
 const NRMRC = path.join(
   process.env[process.platform === 'win32' ? 'USERPROFILE' : 'HOME'] as string,
-  '.nrm2rc'
+  '.dnrmrc'
 )
 const NPMRC = path.join(
   process.env[process.platform === 'win32' ? 'USERPROFILE' : 'HOME'] as string,

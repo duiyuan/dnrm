@@ -1,18 +1,18 @@
 {
-  "name": "nrm2",
+  "name": "dnrm",
   "version": "0.1.0",
   "description": "",
-  "main": "dist/nrm2.js",
-  "module": "dist/nrm2.es.js",
-  "typings": "dist/types/nrm2.d.ts",
-  "bin": "dist/nrm2.js",
+  "main": "dist/dnrm.js",
+  "module": "dist/dnrm.es.js",
+  "typings": "dist/types/dnrm.d.ts",
+  "bin": "dist/dnrm.js",
   "files": [
     "dist"
   ],
   "author": "wangshangwen <shangwenwang20@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:duiyuan/nrm2.git"
+    "url": "git@github.com:duiyuan/dnrm.git"
   },
   "license": "MIT",
   "engines": {
