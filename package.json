@@ -1,6 +1,6 @@
 {
   "name": "dxnrm",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "",
   "main": "dist/dxnrm.js",
   "module": "dist/dxnrm.es.js",
