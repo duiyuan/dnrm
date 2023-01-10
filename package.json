@@ -1,18 +1,18 @@
 {
-  "name": "dnrm",
+  "name": "dxnrm",
   "version": "0.1.0",
   "description": "",
-  "main": "dist/dnrm.js",
-  "module": "dist/dnrm.es.js",
-  "typings": "dist/types/dnrm.d.ts",
-  "bin": "dist/dnrm.js",
+  "main": "dist/dxnrm.js",
+  "module": "dist/dxnrm.es.js",
+  "typings": "dist/types/dxnrm.d.ts",
+  "bin": "dist/dxnrm.js",
   "files": [
     "dist"
   ],
   "author": "wangshangwen <shangwenwang20@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:duiyuan/dnrm.git"
+    "url": "git@github.com:duiyuan/dxnrm.git"
   },
   "license": "MIT",
   "engines": {
@@ -90,7 +90,6 @@
     "open": "^8.4.0",
     "prettier": "^2.6.2",
     "prompt": "^1.0.0",
-    "replace-in-file": "^3.4.2",
     "rimraf": "^2.6.2",
     "rollup": "^0.67.0",
     "rollup-plugin-commonjs": "^9.1.8",
@@ -98,11 +97,9 @@
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-typescript2": "^0.18.0",
-    "shelljs": "^0.8.3",
     "ts-jest": "^28.0.3",
     "ts-node": "^7.0.1",
     "tslib": "^2.4.1",
-    "typedoc": "^0.22.15",
     "typescript": "^4.3.2"
   },
   "dependencies": {}
