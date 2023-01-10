@@ -7,7 +7,7 @@ import json from 'rollup-plugin-json'
 
 const pkg = require('./package.json')
 
-const libraryName = 'dnrm'
+const libraryName = 'dxnrm'
 
 export default {
   input: `src/${libraryName}.ts`,
