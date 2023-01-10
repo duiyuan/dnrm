@@ -356,7 +356,9 @@ async function onTest(target: string) {
     if (!success) {
       suffix += isTimeout ? timeoutMsg : errorMsg
     }
-    messages.push(prefix + name + geneDashLine(name, length) + suffix)
+    messages.push(
+      prefix + name + geneDashLine(name, length) + suffix + ` (${registry})`
+    )
   })
   printMessages(messages)
   return

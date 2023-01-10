@@ -1,11 +1,12 @@
-> Fork [nrm](https://github.com/Pana/nrm) and rewrite all code with typescript, fixed some issues.
+> The repo fork from [nrm](https://github.com/Pana/nrm) so that we can do:
+>
+> 1. Fix some issues at first time
+> 2. Rewrite all code with typescript
 
 # nrm2 -- NPM registry manager
 
-[![NPM version][npm-image]][npm-url]
-
 `nrm2` can help you easy and fast switch between different npm registries,
-now include: `npm`, `cnpm`, `taobao`, `nj(nodejitsu)`.
+now include: `npm`, `cnpm`, `taobao`, `tencent`.
 
 ## How to configure yarn to use private registry ?
 
@@ -38,6 +39,18 @@ $ nrm2 ls  // or nrm2 list
 $ nrm2 use cnpm  //switch registry to cnpm
 
     Registry has been set to: http://r.cnpmjs.org/
+
+```
+
+```
+$ nrm2 test // ping all registries
+
+    npm ---------- 664 ms
+    yarn --------- 755 ms
+    tencent ------ 1169 ms
+    cnpm --------- 998 ms
+  * taobao ------- 59 ms
+    npmMirror ---- 771 ms
 
 ```
 
