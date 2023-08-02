@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ['@duiyuan/commitlint-config'],
+  extends: ['@kaas-devteam/commitlint-config'],
   rules: {},
 }
